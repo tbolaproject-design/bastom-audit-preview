@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bastom Audit LLC — Audit, Tax & Advisory</title>
+  <meta name="description" content="Independent audit, tax and advisory services in Uzbekistan." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="Bastom Audit Home">
+        <img src="assets/bastom-logo-horizontal.svg" alt="Bastom Audit"
+             onerror="this.style.display='none';document.getElementById('brandText').style.display='block';" />
+        <span id="brandText" style="display:none;font-weight:900;">Bastom Audit</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html" data-nav="home" data-i18n="nav_home">Home</a>
+        <a href="about.html" data-nav="about" data-i18n="nav_about">About</a>
+        <a href="services.html" data-nav="services" data-i18n="nav_services">Services</a>
+        <a href="contact.html" data-nav="contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <div class="lang" aria-label="Language switcher">
+          <button type="button" data-lang="en">EN</button>
+          <button type="button" data-lang="ru">RU</button>
+          <button type="button" data-lang="uz">UZ</button>
+        </div>
+        <button class="burger" id="burger" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+
+    <div class="mobile" id="mobileMenu" aria-label="Mobile navigation">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="about.html" data-i18n="nav_about">About</a>
+      <a href="services.html" data-i18n="nav_services">Services</a>
+      <a href="contact.html" data-i18n="nav_contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid" style="grid-template-columns:1fr;">
+        <div>
+          <div class="kicker" data-i18n="home_kicker">Independent Audit Organization</div>
+
+          <h1 data-i18n="home_h1" style="max-width:22ch;">
+            Bastom Audit LLC — Audit, Tax & Advisory in Uzbekistan
+          </h1>
+
+          <p class="muted" data-i18n="home_p" style="font-size:18px;max-width:70ch;">
+            We support shareholders, management and lenders with high-quality audit and pragmatic advisory.
+            Clear timelines, transparent fees, and partner-led engagement.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section">
+    <div class="container">
+      <div>
+        <div class="kicker" data-i18n="home_services_kicker">Our services</div>
+        <h2 data-i18n="home_services_h2">Clear deliverables. Standards-driven work.</h2>
+        <p class="muted" data-i18n="home_services_p" style="max-width:80ch;">
+          A practical service set aligned with international standards and Uzbekistan’s regulatory environment.
+        </p>
+      </div>
+
+      <div class="grid services-grid" style="margin-top:16px;">
+        <div class="card">
+          <h3><span class="icon">A</span> <span data-i18n="svc_audit">Audit &amp; Assurance</span></h3>
+          <p class="muted" data-i18n="svc_audit_p">
+            Statutory and initiative audits, agreed-upon procedures, and stakeholder-focused assurance.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3><span class="icon">T</span> <span data-i18n="svc_tax">Tax &amp; Compliance</span></h3>
+          <p class="muted" data-i18n="svc_tax_p">
+            Tax diagnostics, compliance support, and advisory on transactions and documentation.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3><span class="icon">O</span> <span data-i18n="svc_out">Accounting &amp; Outsourcing</span></h3>
+          <p class="muted" data-i18n="svc_out_p">
+            Bookkeeping, monthly close, management reporting, payroll and CFO support.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3><span class="icon">M</span> <span data-i18n="svc_model">Strategy &amp; Financial Modelling</span></h3>
+          <p class="muted" data-i18n="svc_model_p">
+            Budgeting, forecasting, feasibility studies and scenario modelling for lenders and investors.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3><span class="icon">E</span> <span data-i18n="svc_ops">Operational Efficiency</span></h3>
+          <p class="muted" data-i18n="svc_ops_p">
+            Process diagnostics, KPI frameworks, internal controls and performance improvement.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3><span class="icon">I</span> <span data-i18n="svc_ifrs">IFRS Support</span></h3>
+          <p class="muted" data-i18n="svc_ifrs_p">
+            IFRS conversion support, accounting memos and reporting improvements (non-audit advisory).
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW WE WORK -->
+  <section class="section" style="background:var(--bg); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+    <div class="container">
+      <div class="kicker" data-i18n="how_kicker">How we work</div>
+      <h2 data-i18n="how_h2">A structured process — no surprises.</h2>
+      <p class="muted" data-i18n="how_p" style="max-width:85ch;">
+        Four steps from scoping to delivery, with clear communication and documented outputs.
+      </p>
+
+      <div class="grid process-grid" style="margin-top:16px;">
+        <div class="card step">
+          <div class="num">1</div>
+          <h3 data-i18n="step1">Scoping</h3>
+          <p class="muted" data-i18n="step1p">Kickoff call, objectives, timeline and document checklist.</p>
+        </div>
+
+        <div class="card step">
+          <div class="num">2</div>
+          <h3 data-i18n="step2">Proposal</h3>
+          <p class="muted" data-i18n="step2p">Defined scope, deliverables, fees and engagement letter.</p>
+        </div>
+
+        <div class="card step">
+          <div class="num">3</div>
+          <h3 data-i18n="step3">Fieldwork</h3>
+          <p class="muted" data-i18n="step3p">Testing, analytics, interviews and interim updates.</p>
+        </div>
+
+        <div class="card step">
+          <div class="num">4</div>
+          <h3 data-i18n="step4">Delivery</h3>
+          <p class="muted" data-i18n="step4p">Final outputs, management letter and closing discussion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div style="font-weight:900;font-size:18px;">Bastom Audit</div>
+        <p style="margin-top:10px;color:rgba(255,255,255,.78);" data-i18n="footer_tag">
+          Independent audit, tax and advisory services in Uzbekistan.
+        </p>
+      </div>
+
+      <div>
+        <div class="footer-title" data-i18n="footer_quick">Quick links</div>
+        <div class="footer-links">
+          <a href="index.html" data-i18n="nav_home">Home</a>
+          <a href="about.html" data-i18n="nav_about">About</a>
+          <a href="services.html" data-i18n="nav_services">Services</a>
+          <a href="contact.html" data-i18n="nav_contact">Contact</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer-title" data-i18n="footer_contacts">Contacts</div>
+        <div class="footer-links">
+          <a href="tel:+998916983797">+998 91 698 37 97</a>
+          <a href="mailto:bastomaudit@gmail.com">bastomaudit@gmail.com</a>
+          <a href="contact.html">Tashkent, Republic of Uzbekistan</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,.14);color:rgba(255,255,255,.70);font-size:12px;">
+      © <span id="year"></span> Bastom Audit LLC. <span data-i18n="rights">All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Bastom Audit LLC</title>
+  <meta name="description" content="Contact Bastom Audit LLC — Tashkent, Uzbekistan." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="Bastom Audit Home">
+        <img src="assets/bastom-logo-horizontal.svg" alt="Bastom Audit"
+             onerror="this.style.display='none';document.getElementById('brandText').style.display='block';" />
+        <span id="brandText" style="display:none;font-weight:900;">Bastom Audit</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html" data-nav="home" data-i18n="nav_home">Home</a>
+        <a href="about.html" data-nav="about" data-i18n="nav_about">About</a>
+        <a href="services.html" data-nav="services" data-i18n="nav_services">Services</a>
+        <a href="contact.html" data-nav="contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <div class="lang" aria-label="Language switcher">
+          <button type="button" data-lang="en">EN</button>
+          <button type="button" data-lang="ru">RU</button>
+          <button type="button" data-lang="uz">UZ</button>
+        </div>
+       
+        <button class="burger" id="burger" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+
+    <div class="mobile" id="mobileMenu" aria-label="Mobile navigation">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="about.html" data-i18n="nav_about">About</a>
+      <a href="services.html" data-i18n="nav_services">Services</a>
+      <a href="contact.html" data-i18n="nav_contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<div class="banner">
+  <div class="container">
+    <div class="breadcrumb">Bastom Audit / <span data-i18n="nav_contact">Contact</span></div>
+  </div>
+</div>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="split">
+        <div>
+          <div class="kicker" data-i18n="nav_contact">Contact</div>
+          <h1 data-i18n="contact_title">Contact</h1>
+          <p class="muted" data-i18n="contact_intro">...</p>
+
+          <div class="card" style="margin-top:18px;">
+            <h3 data-i18n="contact_direct">Direct contacts</h3>
+            <p class="muted" style="margin-bottom:10px;">
+              <b>Phone:</b> <a href="tel:+998916983797">+998 91 698 37 97</a><br/>
+              <b>Email:</b> <a href="mailto:bastomaudit@gmail.com">bastomaudit@gmail.com</a>
+            </p>
+            <p class="muted">
+              <b>Address:</b> 2/41, 58-Harbiy Shaharcha Mavzesi, Yashnabod Tumani, Tashkent, Republic of Uzbekistan
+            </p>
+
+            <!-- OPTIONAL: add Google map later by pasting iframe here -->
+            <!-- <div style="margin-top:14px;">
+              <iframe ...></iframe>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="contact_form">Enquiry form</h3>
+          <form id="contactForm">
+            <div class="row">
+              <input name="name" required data-i18n-placeholder="form_name" placeholder="Full name *" />
+              <input name="phone" required data-i18n-placeholder="form_phone" placeholder="Phone / WhatsApp *" />
+            </div>
+            <div class="row">
+              <input name="email" type="email" data-i18n-placeholder="form_email" placeholder="Email" />
+              <select name="service">
+                <option value="" data-i18n="form_service">Select service</option>
+                <option>Audit & Assurance</option>
+                <option>Tax & Compliance</option>
+                <option>Accounting & Outsourcing</option>
+                <option>Strategy & Financial Modelling</option>
+                <option>Operational Efficiency</option>
+                <option>IFRS Support</option>
+              </select>
+            </div>
+            <textarea name="message" data-i18n-placeholder="form_msg" placeholder="Message (scope, timeline, reporting standard, etc.)"></textarea>
+
+            <label class="fineprint">
+              <input type="checkbox" required />
+              <span data-i18n="form_consent">I consent to being contacted about my enquiry.</span>
+            </label>
+
+            <button class="btn btn-primary" type="submit" data-i18n="form_send">Send message</button>
+            <div class="fineprint" id="formNote" style="display:none;"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div style="font-weight:900; font-size:18px;">Bastom Audit</div>
+        <p style="margin-top:10px; color:rgba(255,255,255,.78);" data-i18n="footer_tag">...</p>
+      </div>
+      <div>
+        <div class="footer-title" data-i18n="footer_quick">Quick links</div>
+        <div class="footer-links">
+          <a href="index.html" data-i18n="nav_home">Home</a>
+          <a href="about.html" data-i18n="nav_about">About</a>
+          <a href="services.html" data-i18n="nav_services">Services</a>
+          <a href="contact.html" data-i18n="nav_contact">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-title" data-i18n="footer_contacts">Contacts</div>
+        <div class="footer-links">
+          <a href="tel:+998916983797">+998 91 698 37 97</a>
+          <a href="mailto:bastomaudit@gmail.com">bastomaudit@gmail.com</a>
+          <a href="contact.html">2/41, 58-Harbiy Shaharcha Mavzesi, Yashnabod Tumani, Tashkent</a>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:22px; padding-top:18px; border-top:1px solid rgba(255,255,255,.14); color:rgba(255,255,255,.70); font-size:12px;">
+      © <span id="year"></span> Bastom Audit LLC. <span data-i18n="rights">All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

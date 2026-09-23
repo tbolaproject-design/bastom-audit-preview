@@ -241,3 +241,10 @@ footer a{color:rgba(255,255,255,.88)}
   .burger{display:inline-flex}
   .footer-grid{grid-template-columns:1fr}
 }
+
+/* Language switcher: keep labels on one line (fits 4 languages on phones) */
+.lang button{ white-space:nowrap; }
+@media (max-width:420px){
+  .lang{ gap:2px; padding:4px; }
+  .lang button{ padding:8px 7px; }
+}
